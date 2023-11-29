@@ -1,0 +1,51 @@
+$default-font-color: black;
+$background-image: url("https://images.pexels.com/photos/1698618/pexels-photo-1698618.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+$container-bgcolor: rgb(255, 254, 254,0.7);
+$container-bordercolor:black;
+$textbox-bordercolor:rgb(143, 136, 136);
+$button-textcolor:white;
+$button-hovercolor:black;
+$add-button-color:green;
+$clear-button-color:red;
+
+@mixin mq($size) {
+    @media only screen and (min-width:$size){
+     @content;      
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+html,body{
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    color: $default-font-color;
+    width: 100%;
+    min-height: 100%;
+    @include mq(768px){
+        font-size: 22px;  
+    }
+}
+
+body{
+    padding: 20px;
+    background-image: $background-image;
+    background-size: cover;
+    
+}
+
+section{
+    background-color: $container-bgcolor;
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+    border: 1px solid $container-bordercolor;
+    border-radius: 10px;
+    -webkit-box-shadow: 41px 18px 15px 2px rgba(46,45,46,1);
+-moz-box-shadow: 41px 18px 15px 2px rgba(46,45,46,1);
+box-shadow: 41px 18px 15px 2px rgba(46,45,46,1);
+}

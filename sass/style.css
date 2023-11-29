@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  width: 100%;
+  min-height: 100%;
+}
+@media only screen and (min-width: 768px) {
+  html, body {
+    font-size: 22px;
+  }
+}
+
+body {
+  padding: 20px;
+  background-image: url("https://images.pexels.com/photos/1698618/pexels-photo-1698618.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+}
+
+section {
+  background-color: rgba(255, 254, 254, 0.7);
+  width: 90%;
+  max-width: 700px;
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 41px 18px 15px 2px rgb(46, 45, 46);
+}
+
+.button {
+  width: 15%;
+  min-height: 48px;
+  min-width: 48px;
+  color: white;
+  border: 2px solid rgb(143, 136, 136);
+  border-radius: 10px;
+  outline: none;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  filter: brightness(120%);
+  box-shadow: 4px 2px 5px black;
+}
+
+.newItemEntry {
+  position: sticky;
+  top: 0%;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  z-index: 9999;
+}
+.newItemEntry form {
+  display: flex;
+  justify-content: space-between;
+}
+.newItemEntry form label {
+  position: absolute;
+  left: -10000px;
+}
+.newItemEntry form input[type=text] {
+  width: 80%;
+  font-size: 1.25rem;
+  border: 2px solid rgb(143, 136, 136);
+  padding: 0.75rem;
+  outline: none;
+  opacity: 0.8;
+}
+.newItemEntry form input[type=text]:focus,
+.newItemEntry form input[type=text]:hover {
+  box-shadow: 4px 2px 5px black;
+}
+.newItemEntry form button {
+  font-size: 1.25rem;
+  background-color: green;
+  padding: 0.75rem;
+}
+@media only screen and (min-width: 768px) {
+  .newItemEntry form button {
+    font-size: 1.5rem;
+  }
+}
+
+.listContainer {
+  min-height: 60vh;
+  padding: 0.75rem;
+}
+.listContainer .listTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.listContainer .listTitle button {
+  font-size: 1rem;
+  background-color: red;
+  padding: 0 0.1rem;
+  margin-bottom: 0.5rem;
+}
+@media only screen and (min-width: 768px) {
+  .listContainer .listTitle button {
+    padding: 0 0.5rem;
+  }
+}
+.listContainer .listTitle hr {
+  width: 100%;
+}
+.listContainer .item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 1rem;
+}
+.listContainer .item input[type=checkbox] {
+  text-align: center;
+  width: 2.5rem;
+  min-height: 48px;
+  height: 2.5rem;
+  min-height: 48px;
+  cursor: pointer;
+  margin-right: 1.5rem;
+  opacity: 0.8;
+}
+.listContainer .item input[type=checkbox]:focus + label {
+  text-decoration: underline;
+}
+.listContainer .item label {
+  font-size: 1.1rem;
+}
+.listContainer .confirmation {
+  position: absolute;
+  left: -10000px;
+}/*# sourceMappingURL=style.css.map */
